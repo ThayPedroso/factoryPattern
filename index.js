@@ -1,4 +1,4 @@
-import createCore from './core.js'
+const createCore = require('./core')
 
 const core = createCore()
 

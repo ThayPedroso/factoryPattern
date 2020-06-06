@@ -18,4 +18,4 @@ function createDatabaseConnection() {
     }
 }
 
-export default createDatabaseConnection
+module.exports = createDatabaseConnection

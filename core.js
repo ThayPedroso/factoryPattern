@@ -1,5 +1,5 @@
-import createDatabaseConnection from './database.js'
-import createWebserver from './webserver.js'
+const createDatabaseConnection = require('./database')
+const createWebserver = require('./webserver')
 
 function createCore() {
     const database = createDatabaseConnection()
@@ -14,8 +14,8 @@ function createCore() {
 
     function stop() {
         console.log('> [core] Stopping...')
-        database.start()
-        webserver.start()
+        database.stop()
+        webserver.stop()
         console.log('> [core] Stopping done!')
     }
 
@@ -25,4 +25,4 @@ function createCore() {
     }
 }
 
-export default createCore;
+module.exports = createCore;

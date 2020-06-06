@@ -18,4 +18,4 @@ function createWebserver() {
     }
 }
 
-export default createWebserver
+module.exports = createWebserver
